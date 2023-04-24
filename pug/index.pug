@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/Compiled-CSS/css/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        title Catch The Insect
+    body
+        .screen 
+            h1 Catch The Insect
+            button.btn#start-btn Play Game
+
+        .screen 
+            h1 What is your "favorite" insect?
+            ul.insects-list
+                li
+                    button.choose-insect-btn
+                        p Fly
+                        img(src="https://pngimg.com/uploads/fly/fly_PNG3946.png", alt="Flay")
+                
+                li
+                    button.choose-insect-btn
+                        p Spider
+                        img(src="https://pngimg.com/uploads/spider/spider_PNG6.png", alt="Spider")
+
+                li
+                    button.choose-insect-btn
+                        p Mosquito
+                        img(src="https://pngimg.com/uploads/mosquito/mosquito_PNG18158.png", alt="Mosquito")
+
+                li
+                    button.choose-insect-btn
+                        p Roach
+                        img(src="https://pngimg.com/uploads/roach/roach_PNG12157.png", alt="Roach")
+
+        .screen.game-container#game-container
+            h3#time.time Time: 00:00
+            h3#score.score Score: 0
+            h5#message.message Are you annoyed yet?
+                br
+                .
+                    You are playing an impossible game!
+
+        script(src="/dist/index.js")
